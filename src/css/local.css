@@ -219,7 +219,7 @@
   #sbs-r .cs-picture img {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100%;
     width: 100%;
     /* makes image act like a background image */
@@ -228,7 +228,6 @@
   #sbs-r .cs-picture1 {
     width: 32.625em;
     height: 36.3125em;
-    right: 0;
     top: 0;
   }
   #sbs-r .cs-picture2 {
