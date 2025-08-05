@@ -15,21 +15,10 @@ eleventyNavigation:
 <!--                   Banner                     -->
 <!-- ============================================ -->
 
-<div id="banner-1402">
-    <div class="cs-container">
-        <span class="cs-int-title">Investment Opportunities</span>
-        <div class="cs-breadcrumbs">
-            <a href="/" class="cs-link">Home</a>
-            <a href="/invest" class="cs-link cs-active">Invest</a>
-        </div>
-    </div>
-    <!--Background Image-->
-    <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="/images/investmenthero.png">
-        <source media="(min-width: 601px)" srcset="/images/investmenthero.png">
-        <img decoding="async" src="/images/investmenthero.png" alt="real estate investment opportunity" width="1280" height="568" aria-hidden="true">
-    </picture>
-</div>
+<section id="int-hero">
+  <h1 id="home-h">About Us</h1>
+  {% image './src/images/investmentbanner.png', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+</section>
 
 <!-- ============================================ -->
 <!--                 Content Page                 -->
@@ -74,35 +63,33 @@ eleventyNavigation:
         </div>
         <div class="cs-content">
             <h1 class="cs-title">Real Estate Investment Opportunities in <span class="cs-color">Southwest Michigan</span></h1>
-            <h2>Partner With a Proven Local Expert</h2>
+            <!-- <h2>Partner With a Proven Local Expert</h2> -->
             <h3>Build Wealth Through Tangible Assets</h3>
             <p>
                 At Infinity Investment Property Solutions LLC, we specialize in sourcing and managing high-performing real estate investments that produce strong, reliable returns. With over $10 million in successful transactions, we help investors grow their portfolios through smart acquisitions, full renovations, and new construction projects.
             </p>
-            <p>
+            <!-- <p>
                 We operate exclusively in markets we know best—right here in Southwest Michigan—leveraging 25+ years of local knowledge to identify undervalued properties and future hot spots. Each project is carefully vetted to ensure both upside potential and downside protection.
-            </p>
+            </p> -->
             <br />
             <hr />
             <br />
 
-
-            <h3>Our Investment Approach</h3>
-            <ol>
-                <li>Identify undervalued off-market or distressed properties through broker partnerships</li>
-                <li>Perform full rehabs or new builds with licensed contractors and quality control standards</li>
-                <li>Sell or refinance at a strong ROI, with investors paid based on project structure</li>
-            </ol>
-            <h4>Why Invest With Infinity</h4>
-            <ul>
-                <li>Consistent returns that outperform stocks and REITs</li>
-                <li>Direct access to the founder and project pipeline</li>
-                <li>Frequent progress updates via video and reports</li>
-                <li>Simple, transparent investment process with clear expectations</li>
-            </ul>
-            <p>
-                Whether you're new to real estate or looking to diversify your portfolio, Infinity provides a reliable, personalized investment experience rooted in local expertise and long-term value. Let's grow together.
-            </p>
+            <div class="desktop-only">
+                <h3>Our Investment Approach</h3>
+                <ol>
+                    <li>Identify undervalued off-market or distressed properties through broker partnerships</li>
+                    <li>Perform full rehabs or new builds with licensed contractors and quality control standards</li>
+                    <li>Sell or refinance at a strong ROI, with investors paid based on project structure</li>
+                </ol>
+                <h4>Why Invest With Infinity</h4>
+                <ul>
+                    <li>Consistent returns that outperform stocks and REITs</li>
+                    <li>Direct access to the founder and project pipeline</li>
+                    <li>Frequent progress updates via video and reports</li>
+                    <li>Simple, transparent investment process with clear expectations</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="cs-bubbles" aria-hidden="true"></div>

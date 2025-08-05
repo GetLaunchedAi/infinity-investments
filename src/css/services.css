@@ -31,8 +31,8 @@
         font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
         font-weight: 900;
         line-height: 1.2em;
-        text-align: inherit;
-        margin: 0;
+        text-align: center;
+        margin: 0 auto;
         color: var(--bodyTextColorWhite);
         position: relative;
     }
@@ -95,30 +95,7 @@
         left: 0;
         z-index: 1;
     }
-    #banner-1402 .cs-background:after {
-        /* gradient overlay */
-        content: "";
-        width: 100%;
-        height: 40%;
-        background: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(#000000),
-            to(rgba(0, 0, 0, 0))
-        );
-        background: -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0) 100%);
-        background: linear-gradient(
-            to bottom,
-            #000000 0%,
-            rgba(0, 0, 0, 0) 100%
-        );
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        z-index: 2;
-    }
+
     #banner-1402 .cs-background img {
         position: absolute;
         top: 0;
@@ -127,27 +104,6 @@
         width: 100%;
         /* Makes img tag act as a background image */
         object-fit: cover;
-    }
-}
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    #banner-1402 .cs-background:before {
-        width: 50%;
-        height: 100%;
-        background: -webkit-gradient(
-            linear,
-            left top,
-            right top,
-            from(#000000),
-            to(rgba(0, 0, 0, 0))
-        );
-        background: -o-linear-gradient(left, #000000 0%, rgba(0, 0, 0, 0) 100%);
-        background: linear-gradient(
-            to right,
-            #000000 0%,
-            rgba(0, 0, 0, 0) 100%
-        );
-        opacity: 1;
     }
 }
 
@@ -406,6 +362,7 @@
         width: 2rem;
         height: auto;
         display: block;
+        filter: hue-rotate(30deg);
     }
     #content-page-1402 .cs-item-text {
         font-size: 0.875rem;
@@ -494,7 +451,13 @@
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
     }
+
+    .desktop-only {
+        display: none;
+    }
 }
+
+
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #content-page-1402 .cs-container {
@@ -512,6 +475,9 @@
         width: 44%;
         max-width: 33.875rem;
         display: flex;
+    }
+    .desktop-only {
+        display: block;
     }
 }
 /* Desktop - 1200px */
@@ -533,6 +499,7 @@
         right: 50%;
         bottom: -13.75rem;
     }
+
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
