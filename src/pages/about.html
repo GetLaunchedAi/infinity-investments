@@ -1,0 +1,73 @@
+---
+layout: 'base.html'
+description: "Meta description for the page"
+metaTitle: 'New Leaf Complete Landscape Services'
+tagTitle: 'About'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/about.css'
+permalink: 'about/'
+eleventyNavigation:
+  key: About Us
+  order: 300
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">About Us</h1>
+  {% image './src/images/aboutbanner.png', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+<section id="sbs">
+  <div class="cs-container">
+    <div class="cs-left">
+      {% image './src/images/aboutimg1.png', 'real estate team reviewing blueprints', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/aboutimg2a.png', 'investment property in renovation phase', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <div class="cs-right">
+      <span class="cs-topper">About Infinity</span>
+      <h2 class="cs-title">$10M+ in Transactions. 25 Years of Local Expertise.</h2>
+      <p class="cs-text">
+        Founded by a licensed Michigan builder with over 5 years of full-time experience, Infinity Investment Property Solutions brings deep knowledge of Southwest Michigan’s real estate market. We've successfully completed flips, full builds, and off-market acquisitions.
+      </p>
+      <p class="cs-text">
+        Our reliable crews, local broker partnerships, and data-driven insights help investors outperform the market while building wealth through real property.
+      </p>
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+          "We treat your money like our own—because your success is our success."
+        </p>
+        <span class="cs-name">Infinity Founder</span>
+        <span class="cs-job">Real Estate Investment Expert</span>
+        <img class="cs-quote-icon" loading="lazy" decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="quote icon" width="136"
+          height="77" />
+      </div>
+      <a href="/contact" class="button-solid">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">Get It Done <br> With Us Today</h2>
+    <p>
+      Big ideas start with a simple conversation. Reach out today and let’s get your project on the books.
+    </p>
+    <a href="/contact.html" class="button-solid">Free Estimate</a>
+  </div>
+  {% image './src/images/finalhomeimg.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width:
+  850px)
+  850px, 1920'%}
+</section>
