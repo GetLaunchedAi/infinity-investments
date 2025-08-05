@@ -1,7 +1,7 @@
 ---
 layout: 'base.html'
 description: 'Meta description for the page'
-metaTitle: 'New Leaf Complete Landscape Services'
+metaTitle: 'Infinity Property Solutions LLC'
 tagTitle: 'Investment Opportunities'
 title: 'Investment Opportunities'
 preloadImg: '/images/landing-1920w.webp'
@@ -228,4 +228,12 @@ eleventyNavigation:
             </div>
         </div>
     </div>
+    <script>const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
+                                </script>
 </section>

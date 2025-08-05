@@ -1,8 +1,8 @@
 ---
 layout: 'base.html'
 description: 'Meta description for the page'
-metaTitle: 'New Leaf Complete Landscape Services'
-tagTitle: 'Pixel Perfect Websites'
+metaTitle: 'Infinity Property Solutions LLC'
+tagTitle: 'Southwest Michigan'
 preloadImg: '/images/landing-1920w.webp'
 preloadCSS: '/css/local.css'
 permalink: '/'
@@ -95,7 +95,7 @@ eleventyNavigation:
   <div class="cs-container">
     <div class="cs-left">
       {% image './src/images/featuredimg2.png', 'newly renovated home', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/featuredimg1.png', 'investment flip property', 'cs-picture cs-picture2', 'lazy'%}
+      <!-- {% image './src/images/featuredimg1.png', 'investment flip property', 'cs-picture cs-picture2', 'lazy'%} -->
     </div>
     <div class="cs-right">
       <span class="cs-topper">Our Strategy</span>
@@ -158,6 +158,76 @@ eleventyNavigation:
   </div>
 </section>
 
+<section id="faq-254">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">FAQ’s</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <p class="cs-text">
+                Learn more about how real estate investment with Infinity Investment Property Solutions works, what to
+                expect, and how to get started. If you still have questions, feel free to reach out.
+            </p>
+        </div>
+        <div class="cs-flex-group">
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">What types of real estate investments do you offer?</button>
+                    <p class="cs-item-p">
+                        We specialize in off-market properties, fix-and-flip projects, and new construction
+                        opportunities across Southwest Michigan. All projects are carefully vetted and managed for
+                        strong returns.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">What kind of returns can I expect?</button>
+                    <p class="cs-item-p">
+                        While returns vary by project, our investors have consistently outperformed traditional
+                        investment vehicles like the stock market and REITs. We aim for above-average ROI with
+                        transparency and updates throughout.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">How do I get started as an investor?</button>
+                    <p class="cs-item-p">
+                        Simply contact us through our website or schedule a call to learn more about upcoming
+                        opportunities. We’ll walk you through the process and help determine the right fit for your
+                        investment goals.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">Is there a minimum investment required?</button>
+                    <p class="cs-item-p">
+                        Yes, minimum investment amounts vary by project but typically start around $25,000. We’ll share
+                        exact details during your investor consultation.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">Can I see current or past projects?</button>
+                    <p class="cs-item-p">
+                        Absolutely. We provide video updates, financial performance reports, and testimonials from our
+                        past investors to showcase our track record and project quality.
+                    </p>
+                </li>
+            </ul>
+            <div class="cs-cta">
+                <h3 class="cs-h3">Don’t see the answer you need?</h3>
+                <p class="cs-cta-p">
+                    That’s okay. Just drop us a message and we’ll get back to you as soon as possible.
+                </p>
+                <a href="/contact" class="cs-button-solid">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <script>const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
+                                </script>
+</section>
 <section id="cta">
   <div class="container">
     <h2 class="title">
@@ -175,6 +245,14 @@ eleventyNavigation:
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
+  const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
+                                
   if (window.netlifyIdentity) {
     window
       .netlifyIdentity
