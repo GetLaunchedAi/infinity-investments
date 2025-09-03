@@ -114,6 +114,8 @@ eleventyNavigation:
     </div>
     <div class="cs-bubbles" aria-hidden="true"></div>
 </section>
+
+
 <!-- ============================================ -->
 <!--                  Services                    -->
 <!-- ============================================ -->
@@ -129,32 +131,34 @@ eleventyNavigation:
         <div class="cs-content">
             <span class="cs-topper">Featured Strategy</span>
             <br />
-            <!-- <h2 class="cs-title">Rental Property <span class="cs-color">Investments</span></h2> -->
-            <h3 class="cs-h3">Build Long-Term Wealth with <span class="cs-color">Income-Producing Assets</span></h3>
+            <h3 class="cs-h3">
+                Specializing in Property <span class="cs-color"></span>Renovations and Custom Builds</span></h3>
             <p class="cs-text">
-                Rental properties provide a stable, recurring income stream while building long-term equity. Our team
-                identifies high-demand neighborhoods in Southwest Michigan where rental demand is strong and properties
-                are priced for growth. We help investors acquire, rehab, and lease single-family and multi-family units
-                that generate dependable monthly cash flow.
+                We specialize in transforming properties through high-quality renovations and fully custom builds
+                tailored to
+                each client’s vision. Our team ensures every project enhances both functionality and aesthetics,
+                delivering
+                spaces that increase property value while meeting modern lifestyle needs. From single-family homes to
+                multi-family developments, we manage every step with expertise and precision.
             </p>
             <ul class="cs-ul">
                 <li class="cs-li">
                     <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
                         src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow"
                         width="16" height="18">
-                    Monthly rental income with appreciation upside
+                    Expert renovations that maximize property value
                 </li>
                 <li class="cs-li">
                     <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
                         src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow"
                         width="16" height="18">
-                    Professionally managed rehabs and tenant placement
+                    Custom builds designed to match your lifestyle
                 </li>
                 <li class="cs-li">
                     <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
                         src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow"
                         width="16" height="18">
-                    Hands-off investing with transparent reporting
+                    Professional project management with full transparency
                 </li>
             </ul>
             <a href="/contact" class="cs-button-solid">Contact Us</a>
@@ -162,6 +166,20 @@ eleventyNavigation:
     </div>
 </section>
 
+<!-- ============================================ -->
+<!--                 Disclaimer                   -->
+<!-- ============================================ -->
+
+<section id="disclaimer">
+    <div class="cs-container">
+        <p class="cs-text" style="font-size: 0.9rem; text-align: center; padding: 0 62px; margin-bottom: 100px; font-style: italic;">
+            <strong>Disclaimer:</strong> Infinity Property Solutions LLC does not guarantee returns on any investment.
+            All investments carry inherent risk, including the potential loss of capital. Past performance is not
+            indicative of future results. Investors should carefully evaluate risks and consult with their financial
+            advisor before making investment decisions.
+        </p>
+    </div>
+</section>
 
 <!-- ============================================ -->
 <!--                    FAQ                       -->
@@ -231,9 +249,9 @@ eleventyNavigation:
     <script>const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
         for (const item of faqItems) {
             const onClick = () => {
-            item.classList.toggle('active')
+                item.classList.toggle('active')
+            }
+            item.addEventListener('click', onClick)
         }
-        item.addEventListener('click', onClick)
-        }
-                                </script>
+    </script>
 </section>

@@ -940,7 +940,8 @@
     body.dark-mode #services-563 .cs-title,
     body.dark-mode #services-563 .cs-text,
     body.dark-mode #services-563 .cs-h3,
-    body.dark-mode #services-563 .cs-li {
+    body.dark-mode #services-563 .cs-l,i
+    body.dark-mode #disclaimer .cs-text{
         color: var(--bodyTextColorWhite);
     }
     body.dark-mode #services-563 .cs-text {
