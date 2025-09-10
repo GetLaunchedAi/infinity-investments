@@ -35,7 +35,9 @@ jobs:
           port: ${{ secrets.SFTP_PORT }}
           username: ${{ secrets.SFTP_USER }}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          local_path: ./public/*
-          remote_path: /home/master/applications/${{ secrets.CLOUDWAYS_APP_ID }}/public_html/
+          local_path: ./public          
+          remote_path: ./public_html/    
+          args: '-r'                      
+
 
 
