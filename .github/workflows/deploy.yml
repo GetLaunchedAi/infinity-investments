@@ -29,14 +29,15 @@ jobs:
           cp -f api/send-email.php public/api/send-email.php
 
       - name: Deploy via SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
           server: ${{ secrets.SFTP_HOST }}
           port: ${{ secrets.SFTP_PORT }}
           username: ${{ secrets.SFTP_USER }}
           password: ${{ secrets.SFTP_PASS }}
           local_path: ./public/*
-          remote_path: /home/master/applications/${{ secrets.CLOUDWAYS_APP_ID }}/public_html
+          remote_path: /home/master/applications/${{ secrets.CLOUDWAYS_APP_ID }}/public_html/
           sftp_only: true
           exclude: |
             .htaccess
+
