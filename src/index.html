@@ -20,8 +20,8 @@ eleventyNavigation:
     Your browser does not support the video tag.
   </video>
   <div class="cs-overlay"></div>
-  <div class="cs-container">
-    <div class="cs-flex-group">
+  <div class="cs-container fx fade-in">
+    <div class="cs-flex-group fx slide-top staggered-m" style="--i:1">
       <span class="cs-topper">Trusted Michigan Real Estate Investment Partner</span>
       <h1 class="cs-title">Grow Your Wealth with Proven Real Estate Investments</h1>
       <p class="cs-text">
@@ -40,7 +40,7 @@ eleventyNavigation:
 </section>
 
 <section id="services" class="services">
-  <div class="card">
+  <div class="card fx slide-top staggered-m" style="--i:1">
     <picture>
       <img aria-hidden="true" decoding="async" src="/assets/svgs/service1.svg" alt="investment icon" width="48"
         height="48" />
@@ -49,7 +49,7 @@ eleventyNavigation:
     <p>Invest with confidence in off-market properties and quality rehab projects that produce consistent,
       market-beating returns.</p>
   </div>
-  <div class="card">
+  <div class="card fx slide-top staggered-m" style="--i:2">
     <picture>
       <img aria-hidden="true" decoding="async" src="/assets/svgs/service2.svg" alt="property icon" width="48"
         height="48" />
@@ -58,7 +58,7 @@ eleventyNavigation:
     <p>We identify, renovate, and resell undervalued properties with precision and speed—delivering profitable returns
       for our partners.</p>
   </div>
-  <div class="card">
+  <div class="card fx slide-top staggered-m" style="--i:3">
     <picture>
       <img aria-hidden="true" decoding="async" src="/assets/svgs/service3.svg" alt="build icon" width="48"
         height="48" />
@@ -72,11 +72,11 @@ eleventyNavigation:
 <section id="sbs">
   <div class="cs-container">
     <div class="cs-left">
-      {% image './src/images/aboutimg1.png', 'real estate team reviewing blueprints', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/aboutimg2a.jpg', 'investment property in renovation phase', 'cs-picture cs-picture2',
-      'lazy'%}
+      {% image './src/images/aboutimg1.png', 'real estate team reviewing blueprints', 'cs-picture cs-picture1 fx slide-top staggered-m', 'lazy', '', 'style="--i:1"'%}
+      {% image './src/images/aboutimg2a.jpg', 'investment property in renovation phase', 'cs-picture cs-picture2 fx slide-top staggered-m',
+      'lazy', '', 'style="--i:2"'%}
     </div>
-    <div class="cs-right">
+    <div class="cs-right fx slide-top staggered-m" style="--i:2">
       <span class="cs-topper">About Infinity</span>
       <h2 class="cs-title">$10M+ in Transactions. 25+ Years of Cumulative Experience.</h2>
       <p class="cs-text">
@@ -105,10 +105,10 @@ eleventyNavigation:
 <section id="sbs-r">
   <div class="cs-container">
     <div class="cs-left">
-      {% image './src/images/featuredimg2.png', 'newly renovated home', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/featuredimg2.png', 'newly renovated home', 'cs-picture cs-picture1 fx slide-top staggered-m', 'lazy', '', 'style="--i:1"'%}
       <!-- {% image './src/images/featuredimg1.png', 'investment flip property', 'cs-picture cs-picture2', 'lazy'%} -->
     </div>
-    <div class="cs-right">
+    <div class="cs-right fx slide-top staggered-m" style="--i:2">
       <span class="cs-topper">Our Strategy</span>
       <h2 class="cs-title">Smart Investments. Reliable Results.</h2>
       <p class="cs-text">
@@ -130,16 +130,16 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="reviews">
-  <div class="cs-container">
+  <div class="cs-container fx fade-in">
     <span class="cs-topper">Client Testimonials</span>
     <h2 class="cs-title">What Our Investors Are Saying</h2>
     <p class="cs-text">
-      We’ve helped investors across Michigan grow their portfolios with high-performing real estate investments. Here’s
+      We've helped investors across Michigan grow their portfolios with high-performing real estate investments. Here's
       what they say about working with Infinity Investment Property Solutions.
     </p>
     <ul class="cs-card-group">
       <!-- Review 1 -->
-      <li class="cs-item">
+      <li class="cs-item fx slide-top staggered-m" style="--i:1">
         <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
           src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png" alt="profile picture" width="80"
           height="80" />
@@ -155,13 +155,13 @@ eleventyNavigation:
           src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96" height="16" />
       </li>
       <!-- Review 2 -->
-      <li class="cs-item">
+      <li class="cs-item fx slide-top staggered-m" style="--i:2">
         <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async"
           src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png" alt="profile picture" width="80"
           height="80" />
         <p class="cs-item-p">
-          I’ve partnered on multiple projects with Infinity and each one exceeded expectations. The returns were solid,
-          and the team’s market knowledge is exceptional.
+          I've partnered on multiple projects with Infinity and each one exceeded expectations. The returns were solid,
+          and the team's market knowledge is exceptional.
         </p>
         <span class="cs-reviewer">
           Kimber Abair
@@ -171,14 +171,14 @@ eleventyNavigation:
           src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg" alt="stars" width="96" height="16" />
       </li>
     </ul>
-    <a aria-label="read more reviews" href="/reviews" class="button-solid">Read More</a>
+    <a aria-label="read more reviews" href="/reviews" class="button-solid fx slide-top staggered-m" style="--i:3">Read More</a>
   </div>
 </section>
 
 <section id="faq-254">
-  <div class="cs-container">
+  <div class="cs-container fx fade-in">
     <div class="cs-content">
-      <span class="cs-topper">FAQ’s</span>
+      <span class="cs-topper">FAQ's</span>
       <h2 class="cs-title">Frequently Asked Questions</h2>
       <p class="cs-text">
         Learn more about how real estate investment with Infinity Investment Property Solutions works, what to
@@ -186,7 +186,7 @@ eleventyNavigation:
       </p>
     </div>
     <div class="cs-flex-group">
-      <ul class="cs-faq-group">
+      <ul class="cs-faq-group fx slide-top staggered-m" style="--i:1">
         <!-- Active class added as default -->
         <li class="cs-faq-item active">
           <button class="cs-button">What types of real estate investments do you offer?</button>
@@ -208,14 +208,14 @@ eleventyNavigation:
           <button class="cs-button">How do I get started as an investor?</button>
           <p class="cs-item-p">
             Simply contact us through our website or schedule a call to learn more about upcoming
-            opportunities. We’ll walk you through the process and help determine the right fit for your
+            opportunities. We'll walk you through the process and help determine the right fit for your
             investment goals.
           </p>
         </li>
         <li class="cs-faq-item">
           <button class="cs-button">Is there a minimum investment required?</button>
           <p class="cs-item-p">
-            Yes, minimum investment amounts vary by project but typically start around $25,000. We’ll share
+            Yes, minimum investment amounts vary by project but typically start around $25,000. We'll share
             exact details during your investor consultation.
           </p>
         </li>
@@ -227,31 +227,24 @@ eleventyNavigation:
           </p>
         </li>
       </ul>
-      <div class="cs-cta">
-        <h3 class="cs-h3">Don’t see the answer you need?</h3>
+      <div class="cs-cta fx slide-top staggered-m" style="--i:2">
+        <h3 class="cs-h3">Don't see the answer you need?</h3>
         <p class="cs-cta-p">
-          That’s okay. Just drop us a message and we’ll get back to you as soon as possible.
+          That's okay. Just drop us a message and we'll get back to you as soon as possible.
         </p>
         <a href="/contact" class="cs-button-solid">Contact us</a>
       </div>
     </div>
   </div>
-  <script>const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
-    for (const item of faqItems) {
-      const onClick = () => {
-        item.classList.toggle('active')
-      }
-      item.addEventListener('click', onClick)
-    }
-  </script>
+ 
 </section>
 <section id="cta">
-  <div class="container">
+  <div class="container fx fade-in">
     <h2 class="title">
       Ready to Build Your Real Estate Portfolio?
     </h2>
     <p>
-      Whether you’re new to investing or looking to scale your portfolio, Infinity Investment Property Solutions is here
+      Whether you're new to investing or looking to scale your portfolio, Infinity Investment Property Solutions is here
       to help. Contact us for your personalized investment plan and start building wealth today.
     </p>
     <a href="/contact" class="button-solid">Get in Touch</a>

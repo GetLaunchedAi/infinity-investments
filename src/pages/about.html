@@ -18,7 +18,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="int-hero">
-  <h1 id="home-h">About Us</h1>
+  <h1 id="home-h" class="fx fade-in">About Us</h1>
   {% image './src/images/aboutbanner.png', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
 </section>
 
@@ -29,10 +29,10 @@ eleventyNavigation:
   <div class="cs-container">
     <div class="cs-left">
       <!-- {% image './src/images/aboutimg1.png', 'real estate team reviewing blueprints', 'cs-picture cs-picture1', 'lazy'%} -->
-      {% image './src/images/aboutimg2a.jpg', 'investment property in renovation phase', 'cs-picture cs-picture2',
-      'lazy'%}
+      {% image './src/images/aboutimg2a.jpg', 'investment property in renovation phase', 'cs-picture cs-picture2 fx slide-top staggered-m',
+      'lazy', '', 'style="--i:1"'%}
     </div>
-    <div class="cs-right">
+    <div class="cs-right fx slide-top staggered-m" style="--i:2">
       <span class="cs-topper">About Infinity</span>
       <h2 class="cs-title">$10M+ in Transactions. 25+ Years of Cumulative Local Experience.</h2>
       <p class="cs-text">
@@ -73,10 +73,10 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="cta">
-  <div class="container">
+  <div class="container fx fade-in">
     <h2 class="title">Get It Done <br> With Us Today</h2>
     <p>
-      Big ideas start with a simple conversation. Reach out today and let’s get your project on the books.
+      Big ideas start with a simple conversation. Reach out today and let's get your project on the books.
     </p>
     <a href="/contact.html" class="button-solid">Free Consultation</a>
   </div>
