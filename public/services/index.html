@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Swap our for actual link-->
+        <link rel="canonical" href="https://www.website.com/services/">
+
+        <meta name="description" content="Meta description for the page">
+        <meta name="keywords" content="">
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="Infinity Property Solutions LLC"/>
+        <meta property="og:description" content="Meta description for the page"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.website.com/services/"/>
+        <meta property="og:image" content="/images/social.jpg"/>
+        <meta property="og:image:secure_url" content="/images/social.jpg"/>
+
+        <!--Favicons-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logo-light.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo-light.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/logo-light.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Preload -->
+        <link rel="preload" as="image" href="/assets/logo-light.png">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+        <link rel="stylesheet" href="/css/root.css">
+        <link rel="stylesheet" href="/css/dark.css">
+
+        <link rel="preload" as="image" href="/images/landing-1920w.webp"/>
+
+        <!-- Loading in page specific CSS sheets from css block -->
+        <link rel="stylesheet" href="/css/critical.css"/>
+        <link rel="stylesheet" href="/css/animations.css">
+        <link rel="stylesheet" href="/css/services.css">
+
+        <!--Put analytics tag here at the bottom to prevent it from render blocking-->
+
+        <!-- For home page, use full title, including location for SEO. Other pages should just include the page name -->
+        <title>
+            
+                Investment Opportunities | Infinity Property Solutions LLC
+            
+        </title>
+    </head>
+    <body>
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+        <script defer src="/assets/js/animations.js"></script>
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+
+<div id="navigation">
+    <div aria-hidden="true" class="background-color-div">
+        <!--This div is used to overcome a z-index issue where the open
+            #navbar-menu is on top of the #navigation. This bar places itself 
+            the #navbar-menu so that menu appears behind the #navigation
+        -->
+    </div>
+    <div class="container">
+        <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+        <a class="logo" aria-label="click to go to home page" href="/">
+            <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+            <img class="light" aria-hidden="true" src="/assets/images/logo-light.png" decoding="async" alt="logo">
+
+            <!--Dark Colored Logo-->
+            <img class="dark" aria-hidden="true" src="/assets/images/logo-blue.png" decoding="async" loading="lazy" alt="logo">
+        </a>
+
+        <!--Mobile Nav toggle-->
+        <button class="hamburger-menu" aria-expanded="false" aria-controls="navbar-menu">
+            <span aria-hidden="true"></span>
+        </button>
+
+        <!--Main Nav-->
+<nav id="navbar-menu" aria-label="main navigation">
+    <ul>
+            <li class="" id="Home" >
+                    <a 
+                        
+                        href="/"
+                    >
+                        Home
+                    </a>
+            </li>
+            <li class="" id="Investment Opportunities" >
+                    <a 
+                         class="active" 
+                        href="/services/"
+                    >
+                        Investment Opportunities
+                    </a>
+            </li>
+            <li class="" id="About Us" >
+                    <a 
+                        
+                        href="/about/"
+                    >
+                        About Us
+                    </a>
+            </li>
+            <li class="" id="Contact" >
+                    <a 
+                        
+                        href="/contact/"
+                    >
+                        Contact
+                    </a>
+            </li>
+    </ul>
+</nav>
+
+        <!--Dark Mode toggle-->
+        <button id="dark-mode-toggle">
+            <!--Moon is an inline SVG so you can edit the color if needed-->
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="sun" aria-hidden="true" src="/assets/svgs/sun.svg" decoding="async" alt="sun" width="15" height="15">
+        </button>
+    </div>
+    
+</div>
+        <main id="main"><!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h" class="fx fade-in">Investment Opportunities</h1>
+    <picture class="">
+      <source type="image/webp" srcset="/images/investmentbanner-200w.webp 200w, /images/investmentbanner-400w.webp 400w, /images/investmentbanner-850w.webp 850w, /images/investmentbanner-1920w.webp 1920w, /images/investmentbanner-2500w.webp 2500w" sizes="(max-width: 850px) 850px, 1920px">
+  <source type="image/jpeg" srcset="/images/investmentbanner-200w.jpeg 200w, /images/investmentbanner-400w.jpeg 400w, /images/investmentbanner-850w.jpeg 850w, /images/investmentbanner-1920w.jpeg 1920w, /images/investmentbanner-2500w.jpeg 2500w" sizes="(max-width: 850px) 850px, 1920px">
+      <img
+        src="/images/investmentbanner-200w.jpeg"
+        width="2500"
+        height="1875"
+        alt="cabinets"
+        loading="lazy"
+        decoding="async">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
+
+<section id="content-page-1402">
+    <div class="cs-container">
+        <div class="cs-image-group fx slide-top staggered-m" style="--i:1">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <source media="(max-width: 600px)" srcset="/images/investment.png">
+                    <source media="(min-width: 601px)" srcset="/images/investment.png">
+                    <img loading="lazy" decoding="async" src="/images/investment.png" alt="investor working" width="542"
+                        height="728">
+                </picture>
+                <div class="cs-box">
+                    <img class="cs-box-icon" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear-white.svg" alt="experience icon"
+                        width="60" height="60">
+                    <span class="cs-desc">
+                        Trusted Investment Partner Since 2019
+                    </span>
+                </div>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item fx slide-top staggered-m" style="--i:3">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.digitaloceanspaces.com/Icons/trophy.svg" alt="icon" width="32"
+                            height="32">
+                        Proven Returns
+                    </h3>
+                    <p class="cs-item-text">
+                        Our real estate investments have consistently outperformed traditional markets through strategic
+                        acquisitions, expert renovations, and strong resale execution.
+                    </p>
+                </li>
+                <li class="cs-item fx slide-top staggered-m" style="--i:4">
+                    <h3 class="cs-h3">
+                        <img class="cs-h3-icon" aria-hidden="true" loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.digitaloceanspaces.com/Icons/circle-check.svg" alt="icon" width="32"
+                            height="32">
+                        Personalized Access
+                    </h3>
+                    <p class="cs-item-text">
+                        As a boutique investment firm, we offer one-on-one access to the founder, frequent project
+                        updates, and transparent reporting.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="cs-content fx slide-top staggered-m" style="--i:2">
+            <hr />
+            <br />
+            <br />
+
+            <h1 class="cs-title">Real Estate Investment Opportunities in <span class="cs-color">Southwest
+                    Michigan</span></h1>
+            <!-- <h2>Partner With a Proven Local Expert</h2> -->
+
+            <br />
+            <h3>Build Wealth Through Tangible Assets</h3>
+            <br />
+            <p>
+                At Infinity Investment Property Solutions LLC, we specialize in sourcing and managing high-performing
+                real estate investments that produce strong, reliable returns. With over $10 million in successful
+                transactions, we help investors grow their portfolios through smart acquisitions, full renovations, and
+                new construction projects.
+            </p>
+            <!-- <p>
+                We operate exclusively in markets we know best—right here in Southwest Michigan—leveraging 25+ years of local knowledge to identify undervalued properties and future hot spots. Each project is carefully vetted to ensure both upside potential and downside protection.
+            </p> -->
+            <br />
+            <hr />
+            <br />
+
+            <div class="desktop-only">
+                <h3>Our Investment Approach</h3>
+                <ol>
+                    <li>Identify undervalued off-market or distressed properties through broker partnerships</li>
+                    <li>Perform full rehabs or new builds with licensed contractors and quality control standards</li>
+                    <li>Sell or refinance at a strong ROI, with investors paid based on project structure</li>
+                </ol>
+                <h4>Why Invest With Infinity</h4>
+                <ul>
+                    <li>Consistent returns that outperform stocks and REITs</li>
+                    <li>Direct access to the founder and project pipeline</li>
+                    <li>Frequent progress updates via video and reports</li>
+                    <li>Simple, transparent investment process with clear expectations</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-563">
+    <div class="cs-container">
+        <picture class="cs-picture fx slide-top staggered-m" style="--i:1">
+            <source media="(max-width: 600px)" srcset="/images/rentalproperties.png">
+            <source media="(min-width: 601px)" srcset="/images/rentalproperties.png">
+            <img loading="lazy" decoding="async" src="/images/rentalproperties.png" alt="computer" width="630"
+                height="528" aria-hidden="true">
+        </picture>
+        <div class="cs-content fx slide-top staggered-m" style="--i:2">
+            <span class="cs-topper">Featured Strategy</span>
+            <br />
+            <h3 class="cs-h3">
+                Specializing in Property <span class="cs-color"></span>Renovations and Custom Builds</span></h3>
+            <p class="cs-text">
+                We specialize in transforming properties through high-quality renovations and fully custom builds
+                tailored to
+                each client's vision. Our team ensures every project enhances both functionality and aesthetics,
+                delivering
+                spaces that increase property value while meeting modern lifestyle needs. From single-family homes to
+                multi-family developments, we manage every step with expertise and precision.
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow"
+                        width="16" height="18">
+                    Expert renovations that maximize property value
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow"
+                        width="16" height="18">
+                    Custom builds designed to match your lifestyle
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Services/arrow-green.svg" alt="arrow"
+                        width="16" height="18">
+                    Professional project management with full transparency
+                </li>
+            </ul>
+            <a href="/contact" class="cs-button-solid">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Disclaimer                   -->
+<!-- ============================================ -->
+
+<section id="disclaimer">
+    <div class="cs-container fx fade-in">
+        <p class="cs-text" style="font-size: 0.9rem; text-align: center; padding: 0 60px; font-style: italic;">
+            <strong>Disclaimer:</strong> Infinity Property Solutions LLC does not guarantee returns on any investment.
+            All investments carry inherent risk, including the potential loss of capital. Past performance is not
+            indicative of future results. Investors should carefully evaluate risks and consult with their financial
+            advisor before making investment decisions.
+        </p>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-254">
+    <div class="cs-container fx fade-in">
+        <div class="cs-content">
+            <span class="cs-topper">FAQ's</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <p class="cs-text">
+                Learn more about how real estate investment with Infinity Investment Property Solutions works, what to
+                expect, and how to get started. If you still have questions, feel free to reach out.
+            </p>
+        </div>
+        <div class="cs-flex-group">
+            <ul class="cs-faq-group fx slide-top staggered-m" style="--i:1">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">What types of real estate investments do you offer?</button>
+                    <p class="cs-item-p">
+                        We specialize in off-market properties, fix-and-flip projects, and new construction
+                        opportunities across Southwest Michigan. All projects are carefully vetted and managed for
+                        strong returns.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">What kind of returns can I expect?</button>
+                    <p class="cs-item-p">
+                        While returns vary by project, our investors have consistently outperformed traditional
+                        investment vehicles like the stock market and REITs. We aim for above-average ROI with
+                        transparency and updates throughout.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">How do I get started as an investor?</button>
+                    <p class="cs-item-p">
+                        Simply contact us through our website or schedule a call to learn more about upcoming
+                        opportunities. We'll walk you through the process and help determine the right fit for your
+                        investment goals.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">Is there a minimum investment required?</button>
+                    <p class="cs-item-p">
+                        Yes, minimum investment amounts vary by project but typically start around $25,000. We'll share
+                        exact details during your investor consultation.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">Can I see current or past projects?</button>
+                    <p class="cs-item-p">
+                        Absolutely. We provide video updates, financial performance reports, and testimonials from our
+                        past investors to showcase our track record and project quality.
+                    </p>
+                </li>
+            </ul>
+            <div class="cs-cta fx slide-top staggered-m" style="--i:2">
+                <h3 class="cs-h3">Don't see the answer you need?</h3>
+                <p class="cs-cta-p">
+                    That's okay. Just drop us a message and we'll get back to you as soon as possible.
+                </p>
+                <a href="/contact" class="cs-button-solid">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <script>const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+                item.classList.toggle('active')
+            }
+            item.addEventListener('click', onClick)
+        }
+    </script>
+</section></main>
+        <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="footer">
+    <div class="container">
+        <div class="left-section">
+            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/images/logo-light.png" alt="logo" width="264" height="78"></a>
+        </div>
+        <div class="right-section">
+            <div class="lists">
+                <ul>
+                    <li>
+                        <h2>Information</h2>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/services">Investment Opportunities</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Contact</h2>
+                    </li>
+                    <li>
+                        <a href="/contact">Edwardsburg, Mi</a>
+                    </li>
+                    <li>
+                        <a href="tel:574-575-0869">T: (574)-575-0869</a>
+                    </li>
+                    <li>
+                        <a href="mailto:">Click to Email</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit">
+        <span>Designed and Hand Coded by</span>
+        <a href="https://www.kalamazoowebsitedesign.com" target="_blank">Kalamazoo Website Design</a>
+        <span class="copyright"> Copyright 2025 - Present</span>
+    </div>
+</footer>
+
+        <script defer src="/assets/js/nav.js"></script>
+        <script defer src="/assets/js/dark.js"></script>
+
+        <!--
+        This script adds a class to the body after scrolling 100px
+        and we used these body.scroll styles to create some on scroll 
+        animations with the navbar
+    -->
+        <script defer>
+            document.addEventListener('scroll', (e) => {
+                const scroll = document.documentElement.scrollTop;
+                if (scroll >= 100) {
+                    document
+                        .querySelector('body')
+                        .classList
+                        .add('scroll')
+                } else {
+                    document
+                        .querySelector('body')
+                        .classList
+                        .remove('scroll')
+                }
+            });
+        </script>
+
+    </body>
+</html>

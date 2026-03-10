@@ -1,7 +1,7 @@
 ---
 layout: 'base.html'
 description: "Meta description for the page"
-metaTitle: 'New Leaf Complete Landscape Services'
+metaTitle: 'Infinity Property Solutions LLC'
 tagTitle: 'About'
 preloadImg: '/images/cabinets2-1920w.webp'
 preloadCSS: '/css/about.css'
@@ -18,7 +18,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="int-hero">
-  <h1 id="home-h">About Us</h1>
+  <h1 id="home-h" class="fx fade-in">About Us</h1>
   {% image './src/images/aboutbanner.png', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
 </section>
 
@@ -28,17 +28,28 @@ eleventyNavigation:
 <section id="sbs">
   <div class="cs-container">
     <div class="cs-left">
-      {% image './src/images/aboutimg1.png', 'real estate team reviewing blueprints', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/aboutimg2a.png', 'investment property in renovation phase', 'cs-picture cs-picture2', 'lazy'%}
+      <!-- {% image './src/images/aboutimg1.png', 'real estate team reviewing blueprints', 'cs-picture cs-picture1', 'lazy'%} -->
+      {% image './src/images/aboutimg2a.jpg', 'investment property in renovation phase', 'cs-picture cs-picture2 fx slide-top staggered-m',
+      'lazy', '', 'style="--i:1"'%}
     </div>
-    <div class="cs-right">
+    <div class="cs-right fx slide-top staggered-m" style="--i:2">
       <span class="cs-topper">About Infinity</span>
-      <h2 class="cs-title">$10M+ in Transactions. 25 Years of Local Expertise.</h2>
+      <h2 class="cs-title">$10M+ in Transactions. 25+ Years of Cumulative Local Experience.</h2>
       <p class="cs-text">
-        Founded by a licensed Michigan builder with over 5 years of full-time experience, Infinity Investment Property Solutions brings deep knowledge of Southwest Michigan’s real estate market. We've successfully completed flips, full builds, and off-market acquisitions.
+        Having lived in Southwest Michigan for over 30 years, our founder brings both personal roots and professional
+        expertise to the market. With more than 5 years of full-time building and investing experience—and over 25 years
+        of cumulative industry knowledge—Infinity Investment Property Solutions operates as a boutique real estate
+        investment firm tailored to individual investors.
       </p>
       <p class="cs-text">
-        Our reliable crews, local broker partnerships, and data-driven insights help investors outperform the market while building wealth through real property.
+        We have successfully completed numerous flips and new builds, while leveraging a deep understanding of sales and
+        marketing to deliver consistent, high-quality opportunities. By living and working in the communities we invest
+        in, including Southwest Michigan and Northern Indiana, we take pride in improving neighborhoods, providing
+        quality homes, and driving long-term value for both our investors and the community.
+      </p>
+      <p class="cs-text">
+        Our smaller size allows us to stay agile and attentive, offering personalized investment strategies that compete
+        with—and often outperform—larger institutions.
       </p>
       <div class="cs-flex-group">
         <p class="cs-flex-p">
@@ -50,8 +61,10 @@ eleventyNavigation:
           src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="quote icon" width="136"
           height="77" />
       </div>
-      <a href="/contact" class="button-solid">Contact Us</a>
+    <a href="/contact" class="button-solid">Contact Us</a>
+
     </div>
+  </div>
   </div>
 </section>
 
@@ -60,12 +73,12 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="cta">
-  <div class="container">
+  <div class="container fx fade-in">
     <h2 class="title">Get It Done <br> With Us Today</h2>
     <p>
-      Big ideas start with a simple conversation. Reach out today and let’s get your project on the books.
+      Big ideas start with a simple conversation. Reach out today and let's get your project on the books.
     </p>
-    <a href="/contact.html" class="button-solid">Free Estimate</a>
+    <a href="/contact.html" class="button-solid">Free Consultation</a>
   </div>
   {% image './src/images/finalhomeimg.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width:
   850px)
